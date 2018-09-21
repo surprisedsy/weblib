@@ -11,20 +11,7 @@ class MyHTTPRequestHandler(BaseHTTPRequestHandler):
         self.wfile.write("<h1>안녕하세요</h1>".encode("utf-8"))          # 응답 바디
 
 
-
-
-
 httpd = HTTPServer(("", port), MyHTTPRequestHandler)
 print("Server running on port", port)
 httpd.serve_forever()
-
-
-
-
-
-
-
-
-
-
 

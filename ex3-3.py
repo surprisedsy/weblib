@@ -7,7 +7,7 @@ data = urlencode({"name" : "둘리", "email" : "", "pwd" : ""})
 data = data.encode("UTF-8")
 print(data)
 
-request = Request("http://www.example.com/join", data)
+request = Request("http://www.example.com", data)
 request.add_header("Content-Type", "text/html")
 
 f = urlopen(request)
